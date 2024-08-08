@@ -20,7 +20,7 @@ client.once("ready", () => {
   cron.schedule("0 10 * * *", async () => {
     try {
       const response = await axios.get(
-        "https://horoscopo-today-production.up.railway.app/api/horoscopes"
+        "https://horoscopo-today-ivory.vercel.app/api/horoscopes"
       );
       console.log("response", response);
       const data = response.data;
